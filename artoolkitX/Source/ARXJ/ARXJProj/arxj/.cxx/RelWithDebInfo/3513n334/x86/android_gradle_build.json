@@ -1,0 +1,108 @@
+{
+  "buildFiles": [
+    "/bitrise/src/Source/ARX/AR/CMakeLists.txt",
+    "/bitrise/src/Source/ARX/AR2/CMakeLists.txt",
+    "/bitrise/src/Source/ARX/ARG/CMakeLists.txt",
+    "/bitrise/src/Source/ARX/ARUtil/CMakeLists.txt",
+    "/bitrise/src/Source/ARX/ARVideo/Android/CMakeLists.txt",
+    "/bitrise/src/Source/ARX/ARVideo/CMakeLists.txt",
+    "/bitrise/src/Source/ARX/ARVideo/Dummy/CMakeLists.txt",
+    "/bitrise/src/Source/ARX/ARVideo/External/CMakeLists.txt",
+    "/bitrise/src/Source/ARX/ARVideo/Image/CMakeLists.txt",
+    "/bitrise/src/Source/ARX/CMakeLists.txt",
+    "/bitrise/src/Source/ARX/KPM/CMakeLists.txt",
+    "/bitrise/src/Source/ARX/OCVT/CMakeLists.txt",
+    "/bitrise/src/Source/CMakeLists.txt",
+    "/bitrise/src/Source/Utilities/CMakeLists.txt",
+    "/bitrise/src/Source/cmake/FindOpenCV.cmake",
+    "/bitrise/src/Source/cmake/FindOpenGL3.cmake",
+    "/bitrise/src/Source/cmake/FindOpenGLES2.cmake",
+    "/bitrise/src/Source/depends/CMakeLists.txt",
+    "/bitrise/src/Source/depends/common/CMakeLists.txt",
+    "/bitrise/src/Source/depends/common/src/CMakeLists.txt",
+    "/bitrise/src/Source/depends/common/src/Eden/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/opt/android-sdk-linux/cmake/3.18.1/bin/ninja",
+      "-C",
+      "/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/opt/android-sdk-linux/cmake/3.18.1/bin/ninja",
+    "-C",
+    "/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "AR::@79b4fd652ece30aa05c3": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "AR",
+      "output": "/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86/ARX/AR/libAR.a"
+    },
+    "AR2::@08e2575352e9458f6f28": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "AR2",
+      "output": "/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86/ARX/AR2/libAR2.a"
+    },
+    "ARG::@cc57e848081231941d80": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "ARG",
+      "output": "/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86/ARX/ARG/libARG.a"
+    },
+    "ARUtil::@f30da7481071a3080025": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "ARUtil",
+      "output": "/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86/ARX/ARUtil/libARUtil.a"
+    },
+    "ARVideo::@3c45b409bc855e9ec929": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "ARVideo",
+      "output": "/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86/ARX/ARVideo/libARVideo.a"
+    },
+    "ARX::@f7ea1568cfe63205b78c": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "ARX",
+      "output": "/bitrise/src/Source/ARXJ/ARXJProj/arxj/build/intermediates/cxx/RelWithDebInfo/3513n334/obj/x86/libARX.so",
+      "runtimeFiles": []
+    },
+    "Eden::@2cdcccbdb19ed3c83886": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "Eden",
+      "output": "/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86/depends/common/src/Eden/libEden.a"
+    },
+    "KPM::@b56d70662f21fbc7d455": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "KPM",
+      "output": "/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86/ARX/KPM/libKPM.a"
+    },
+    "OCVT::@8514d52a0380ee615915": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "OCVT",
+      "output": "/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86/ARX/OCVT/libOCVT.a"
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/opt/android-sdk-linux/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+      "cppCompilerExecutable": "/opt/android-sdk-linux/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

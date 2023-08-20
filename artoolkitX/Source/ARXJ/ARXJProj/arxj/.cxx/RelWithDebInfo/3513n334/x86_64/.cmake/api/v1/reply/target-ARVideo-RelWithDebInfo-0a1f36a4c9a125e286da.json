@@ -1,0 +1,476 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "ARX/ARVideo/libARVideo.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_dependencies",
+			"add_definitions",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"ARX/ARVideo/CMakeLists.txt",
+			"ARX/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 117,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 121,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 21,
+				"parent" : 8
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 81,
+				"parent" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 88,
+				"parent" : 8
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 126,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -g -DNDEBUG -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "ARVIDEO_INPUT_ANDROID"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "ARVIDEO_INPUT_DEFAULT_ANDROID"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "ARVIDEO_INPUT_DUMMY"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "ARVIDEO_INPUT_EXTERNAL"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "ARVIDEO_INPUT_IMAGE"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "ARX_EXPORTS=1"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "ARX_TARGET_PLATFORM_ANDROID=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 12,
+					"path" : "/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86_64/ARX/AR/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/bitrise/src/Source/ARX/ARVideo/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/bitrise/src/Source/depends/android/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/bitrise/src/Source/ARX/ARVideo/../AR/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/bitrise/src/Source/ARX/ARVideo/../ARUtil/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				5,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				15,
+				19,
+				24
+			],
+			"sysroot" : 
+			{
+				"path" : "/opt/android-sdk-linux/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+			}
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -frtti -fexceptions  -std=c++11 -O2 -g -DNDEBUG -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "ARVIDEO_INPUT_ANDROID"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "ARVIDEO_INPUT_DEFAULT_ANDROID"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "ARVIDEO_INPUT_DUMMY"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "ARVIDEO_INPUT_EXTERNAL"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "ARVIDEO_INPUT_IMAGE"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "ARX_EXPORTS=1"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "ARX_TARGET_PLATFORM_ANDROID=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 12,
+					"path" : "/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86_64/ARX/AR/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/bitrise/src/Source/ARX/ARVideo/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/bitrise/src/Source/depends/android/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/bitrise/src/Source/ARX/ARVideo/../AR/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/bitrise/src/Source/ARX/ARVideo/../ARUtil/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				17,
+				21,
+				26
+			],
+			"sysroot" : 
+			{
+				"path" : "/opt/android-sdk-linux/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "AR::@79b4fd652ece30aa05c3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ARUtil::@f30da7481071a3080025"
+		}
+	],
+	"id" : "ARVideo::@3c45b409bc855e9ec929",
+	"name" : "ARVideo",
+	"nameOnDisk" : "libARVideo.a",
+	"paths" : 
+	{
+		"build" : "ARX/ARVideo",
+		"source" : "ARX/ARVideo"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				6,
+				14,
+				16,
+				18,
+				20,
+				22,
+				23,
+				25
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				5,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				15,
+				17,
+				19,
+				21,
+				24,
+				26
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/include/ARX/ARVideo/video.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/include/ARX/ARVideo/videoConfig.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/include/ARX/ARVideo/videoLuma.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/include/ARX/ARVideo/videoRGBA.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/cparamSearch.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ARX/ARVideo/cparamSearch.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/nxjson.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ARX/ARVideo/nxjson.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ARX/ARVideo/video.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ARX/ARVideo/video2.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ARX/ARVideo/videoAspectRatio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ARX/ARVideo/videoLuma.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ARX/ARVideo/videoRGBA.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ARX/ARVideo/videoSaveImage.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/Dummy/videoDummy.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ARX/ARVideo/Dummy/videoDummy.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/External/videoExternal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "ARX/ARVideo/External/videoExternal.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/Image/videoImage.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ARX/ARVideo/Image/videoImage.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/Android/videoAndroid.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "ARX/ARVideo/Android/videoAndroid.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/Android/videoAndroidPrivate.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/Android/sqlite3.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ARX/ARVideo/Android/sqlite3.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ARX/ARVideo/Android/camera_utils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "ARX/ARVideo/Android/camera_utils.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

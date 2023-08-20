@@ -1,0 +1,9 @@
+<map id="ARTrackableSquare::initWithPatternFile" name="ARTrackableSquare::initWithPatternFile">
+<area shape="rect" id="node1" title=" " alt="" coords="5,101,152,141"/>
+<area shape="rect" id="node2" href="$ar_patt_load_8c.html#a6c3899cc1122ad7ae5bd93b4c00a64cf" title="Load a pattern file into a pattern handle." alt="" coords="231,51,315,76"/>
+<area shape="rect" id="node5" href="$class_a_r_trackable_square.html#a9f5452921633ac1bd40b661081a9da79" title=" " alt="" coords="200,101,346,141"/>
+<area shape="rect" id="node7" href="$class_a_r_trackable_square.html#af38499ff1ed1065ccb0be6f4cb431058" title=" " alt="" coords="200,166,346,207"/>
+<area shape="rect" id="node3" href="$ar_patt_load_8c.html#a1eb242ab9531966ab8bd8a5379e78792" title=" " alt="" coords="394,5,543,31"/>
+<area shape="rect" id="node4" href="$file__utils_8c.html#a21f1c9d5c1f0959f58653362849bd63f" title=" " alt="" coords="449,55,488,80"/>
+<area shape="rect" id="node6" href="$ar_patt_load_8c.html#a7e05342aa3eec9d14b56886aa9bd3731" title="Frees (unloads) a pattern file from memory." alt="" coords="428,108,510,134"/>
+</map>
