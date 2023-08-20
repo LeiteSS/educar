@@ -63,6 +63,7 @@ dependencies {
     implementation 'com.google.mlkit:text-recognition-japanese:16.0.0'
     implementation 'com.google.mlkit:text-recognition-korean:16.0.0'
 
+    implementation(name:'arxj-release', ext:'aar')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
