@@ -4,3 +4,4 @@ numpy==1.25.2
 cython==0.29.33
 buildozer==1.5.0
 camera4kivy==0.3.0
+mkdocs
