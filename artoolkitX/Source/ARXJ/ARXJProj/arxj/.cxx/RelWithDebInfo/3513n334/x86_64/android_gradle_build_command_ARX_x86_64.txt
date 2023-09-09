@@ -1,7 +1,0 @@
-Executable : /opt/android-sdk-linux/cmake/3.18.1/bin/ninja
-arguments : 
--C
-/bitrise/src/Source/ARXJ/ARXJProj/arxj/.cxx/RelWithDebInfo/3513n334/x86_64
-ARX
-jvmArgs : 
-
