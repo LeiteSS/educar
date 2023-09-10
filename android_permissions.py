@@ -38,10 +38,10 @@ class AndroidPermissions:
     @mainthread
     def no_permission_view(self):
         view = ModalView()
-        view.add_widget(Button(text='Permission NOT granted.\n\n' +\
-                               'Tap to quit app.\n\n\n' +\
-                               'If you selected "Don\'t Allow",\n' +\
-                               'enable permission with App Settings.',
+        view.add_widget(Button(text='Permissão Não concedida.\n\n' +\
+                               'Aperte para sair.\n\n\n' +\
+                               'Se você escolheu "Não Permitir",\n' +\
+                               'permita através das configuração do smartphone.',
                                on_press=self.bye))
         view.open()
 
