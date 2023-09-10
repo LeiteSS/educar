@@ -1,9 +1,17 @@
+import math
+import numpy as np
+import cv2
+
 from kivy.clock import mainthread
 from kivy.graphics import Color, Rectangle
 from kivy.graphics.texture import Texture
-import numpy as np
-import cv2
+from kivy.resources import resource_find
+
 from camera4kivy import Preview
+from object_module import *
+import aruco_module as aruco 
+from my_constants import *
+from utils import get_extended_RT
 
 class AugmentedReality(Preview):
 
@@ -12,14 +20,39 @@ class AugmentedReality(Preview):
         self.analyzed_texture = None
 
     def analyze_pixels_callback(self, pixels, image_size, image_pos, scale, mirror):
-        rgba   = np.fromstring(pixels, np.uint8).reshape(image_size[1],
-                                                         image_size[0], 4)
+        obj = three_d_object('data/assets/low-poly-fox-by-pixelmannen.obj', 'data/assets/texture.png')
+        marker_colored = cv2.imread('data/m1.png')
+        assert marker_colored is not None, "Could not find the aruco marker image file"
+        
+        marker_colored = cv2.flip(marker_colored, 1)
+        marker_colored =  cv2.resize(marker_colored, (480,480), interpolation = cv2.INTER_CUBIC )
+        marker = cv2.cvtColor(marker_colored, cv2.COLOR_BGR2GRAY)
 
-        gray   = cv2.cvtColor(rgba, cv2.COLOR_RGBA2GRAY)
-        blur   = cv2.GaussianBlur(gray, (3,3), 0)
-        edges  = cv2.Canny(blur,50,100)
-        rgba   = cv2.cvtColor(edges, cv2.COLOR_GRAY2RGBA) 
-        pixels = rgba.tostring()
+        vc = cv2.VideoCapture(0)
+
+        h,w = marker.shape
+
+        marker_sig1 = aruco.get_bit_sig(marker, np.array([[0,0],[0,w], [h,w], [h,0]]).reshape(4,1,2))
+        marker_sig2 = aruco.get_bit_sig(marker, np.array([[0,w], [h,w], [h,0], [0,0]]).reshape(4,1,2))
+        marker_sig3 = aruco.get_bit_sig(marker, np.array([[h,w],[h,0], [0,0], [0,w]]).reshape(4,1,2))
+        marker_sig4 = aruco.get_bit_sig(marker, np.array([[h,0],[0,0], [0,w], [h,w]]).reshape(4,1,2))
+        
+        sigs = [marker_sig1, marker_sig2, marker_sig3, marker_sig4]
+
+        rval, frame = vc.read()
+
+        while rval: 
+            rval, frame = vc.read()
+            canvas = np.zeros((h_canvas, w_canvas, 3), np.uint8)
+            canvas[:h, :w, :] = marker_colored
+            success, H = aruco.find_homography_aruco(frame, marker, sigs)
+        
+            R_T = get_extended_RT(A, H)
+            transformation = A.dot(R_T)
+        
+            augmented = np.flip(augment(frame, obj, transformation, marker), axis = 1)
+            canvas[:h2 , w: , :] = augmented
+            cv2.imshow("webcam", canvas)
 
         self.make_thread_safe(pixels, image_size) 
 
@@ -35,8 +68,3 @@ class AugmentedReality(Preview):
         else:
             self.analyzed_texture = None
 
-    def canvas_instructions_callback(self, texture, tex_size, tex_pos):
-        if self.analyzed_texture:
-            Color(1,1,1,1)
-            Rectangle(texture= self.analyzed_texture,
-                      size = tex_size, pos = tex_pos)
