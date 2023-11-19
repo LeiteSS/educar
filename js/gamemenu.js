@@ -21,7 +21,7 @@ $(document).ready(function(e){
 	};
 
 	function showAr() {
-		window.location.href = "/ar";
+		window.location.href = "/educar/ar";
 	}
 	
 	//Hide loading
