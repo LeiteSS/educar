@@ -21,7 +21,7 @@ $(document).ready(function(e){
 	};
 
 	function showAr() {
-		window.location.href = "/ar.html";
+		window.location.href = "./ar";
 	}
 	
 	//Hide loading
