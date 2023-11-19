@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Educar</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="fonts/fonts.css"/>
+		<link rel="stylesheet" href="css/educar.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+		<script>
+			(function(h,o,t,j,a,r){
+					h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+					h._hjSettings={hjid:3742016,hjsv:6};
+					a=o.getElementsByTagName('head')[0];
+					r=o.createElement('script');r.async=1;
+					r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+					a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+	</head>
+<body>
+
+		<h1 class="main-font title">Educar</h1>
+		<ul id="main-menu"></ul>
+		<div id="loading">
+			<img id="loading-img" width="120" src="img/loading.gif"/>
+			<h2 class="main-font">Carregando...</h2>
+		</div>
+		
+		<div id="credits" style="display:none;margin-left:40px;margin-top:60px;">
+
+			<p>Educar</p>
+			<p>Made with Ar.js</p>
+			<p>silas.leite2@fatec.sp.gov.br</p>
+			
+			<ul class="sub-menu" id="back-credits" style="top:0px;">
+				<li class="back">Voltar</li>
+			</ul>
+			
+		</div>
+
+		<div id="help" style="display:none;margin-left:40px;margin-top:60px;">
+			<p>Este projeto usa a biblioteca Ar.js e portanto necessita de um cartão hiro, no qual</p>
+			<p>é usado pela biblioteca ArtoolKit, pioneira na implementação da Realidade Aumentada.</p>
+			<p>Sendo assim, aponte o marcador para a camera e se divirta-se!</p>
+			<a href="https://github.com/artoolkit/artoolkit5/blob/master/doc/patterns/Hiro%20pattern.pdf" target="_blank">Click aqui pra baixar e imprimir um cartão hiro</a>
+			<br />
+			<ul class="sub-menu" id="back-help" style="top:0px;">
+				<li class="back">Voltar</li>
+			</ul>
+			
+		</div>
+		
+		<div id="assets">
+			<audio id="sfx-background" loop>
+				<source></source>
+				<source></source>
+			</audio>
+			<audio id="sfx-select">
+				<source src="sound/menu_select_1.ogg"></source>
+				<source src="sound/menu_select_1.mp3"></source>
+			</audio>
+			<audio id="sfx-move">
+				<source src="sound/menu_move_1.ogg"></source>
+				<source src="sound/menu_move_1.mp3"></source>
+			</audio>
+		</div>
+		
+
+</body>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/gamemenu.js"></script>
+
+</html>

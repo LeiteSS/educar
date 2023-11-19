@@ -1,0 +1,125 @@
+
+body { 
+  background: url("../img/background/background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align:center;
+}
+
+h1{
+	font-size:100px;	
+}
+
+.title{
+	color:gold;
+	position:relative;
+	top:30px;
+	right:5px;
+}
+
+.main-font{
+	font-family: 'ABeeZee';
+}
+
+#main-menu{
+	color: gold;
+	list-style-type: none;
+	margin:0 auto;
+	/*display:none;*/
+	position:relative;
+	top:100px;
+	right:25px;
+	font-size:30px;
+	font-family: 'ABeeZee';
+	display:inline-block;
+}
+
+.sub-menu{
+	color:gold;
+	list-style-type: none;
+	margin:0 auto;
+	display:none;
+	position:relative;
+	top:100px;
+	right:25px;
+	font-size:25px;
+	font-family: 'ABeeZee';
+	display:inline-block;
+	cursor:pointer;
+}
+
+
+.back{
+	text-align:center;
+	color:gold;
+	list-style-type: none;
+	margin:0 auto;
+	display:none;
+	position:relative;
+	font-size:25px;
+	font-family: 'ABeeZee';
+	display:inline-block;
+	cursor:pointer;
+}
+
+.sub-menu-opt small{
+	font-size:20px;
+}
+
+#main-menu li{
+	cursor:pointer;
+}
+
+#main-menu li:hover{
+	color:gold;
+}
+
+.selected-opt {
+	color:gold;
+}
+
+#loading {
+	position:relative;
+	top:50px;
+
+	padding:20px;
+	width:160px;
+	margin:0 auto;
+	display:none;
+}
+
+#loading h2 {
+	color:greenyellow;
+}
+
+#credits{
+	color:red;
+	list-style-type: none;
+	margin:0 auto;
+	display:none;
+	position:relative;
+	top:40px;
+	right:25px;
+	font-size:25px;
+	font-family: 'ABeeZee';
+	display:inline-block;
+}
+
+#help{
+	color:red;
+	list-style-type: none;
+	margin:0 auto;
+	display:none;
+	position:relative;
+	top:40px;
+	right:25px;
+	font-size:25px;
+	font-family: 'ABeeZee';
+	display:inline-block;
+}
+
+#help a{
+	color:red;
+}
