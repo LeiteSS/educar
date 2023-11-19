@@ -21,6 +21,7 @@ $(document).ready(function(e){
 	};
 
 	function showAr() {
+		// why is not working?
 		window.location.href = "/educar/ar";
 	}
 	
